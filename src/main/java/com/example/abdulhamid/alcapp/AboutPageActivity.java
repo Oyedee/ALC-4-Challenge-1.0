@@ -21,6 +21,8 @@ public class AboutPageActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         WebView displayPage = (WebView) findViewById(R.id.webView_alc_page);
 
         WebSettings webSettings = displayPage.getSettings();

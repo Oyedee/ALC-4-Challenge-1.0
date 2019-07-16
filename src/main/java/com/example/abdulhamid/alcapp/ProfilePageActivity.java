@@ -18,6 +18,8 @@ public class ProfilePageActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ImageView photo = (ImageView) findViewById(R.id.imageView_photo);
         photo.setImageResource(R.drawable.photo);
 

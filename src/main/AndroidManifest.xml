@@ -23,11 +23,20 @@
         <activity
             android:name=".AboutPageActivity"
             android:label="@string/title_activity_about_page"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.abdulhamid.alcapp.ButtonActivity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ButtonActivity" />
         <activity
             android:name=".ProfilePageActivity"
             android:label="@string/title_activity_profile_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.abdulhamid.alcapp.ButtonActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ButtonActivity" />
+        </activity>
     </application>
 
 </manifest>
